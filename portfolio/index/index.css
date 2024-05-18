@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*
+
+H1:80px
+h2:60PX
+p:40px
+
+
+*/
+
+
+body {
+    background-color:  #1c1c1e;
+}
+
+header {
+    display: flex;
+    justify-content:center;
+    
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    font-size: 30px;
+}
+
+
+.home {
+    margin-top: 50px;
+    text-align: start;
+    margin-left: 100px;
+    width: 100%; 
+    margin: 0 auto;
+}
+
+.home p {
+    font-size: 40px;
+    color: white;
+}
+
+.bouton {
+    border: 3px solid #ffcc6c;
+    border-radius: 10px;
+    margin-top: 0px;
+    padding: 10px 20px;
+    display: block;
+    width: 150px;
+    text-align: center;
+}
+.main-container {
+    position: relative;
+}
+
+.container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr auto; /* Diviser en deux colonnes, 1ère colonne prendra tout l'espace disponible, 2ème colonne ajustée à la largeur de son contenu */
+    gap: 10px; /* Espacement entre les éléments */
+    align-items: start; /* Aligner les éléments en haut */
+}
+
+
+nav a:hover{
+    color: #ffcc6c;
+    transition: background-color 0.3s, color 0.3s; /* Ajoute une transition pour l'effet de survol */
+
+}
+.home {
+    padding: 20px;
+    color: white;
+    margin-top: 0px;
+    margin-left: 100px;
+}
+
+.home h1 {
+    font-size: 80px;
+}
+
+.home span {
+    color: #ffcc6c;
+    font-size: 80px;
+}
+
+.home p {
+    font-size: 40px;
+}
+
+.bouton {
+    border: 3px solid #ffcc6c;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px 40px;
+    text-align: center;
+}
+
+.bouton a {
+    color: #ffcc6c;
+    font-size: 30px;
+}
+
+img {
+    height: auto;
+    margin-right: 300px;
+    margin-top: 0px;
+    margin-left: auto;
+    z-index: 0;
+    border-radius: 100%;
+    box-shadow:white;
+}  
+.moi:hover{
+    opacity: 0.8;
+}
+
+.bouton a {
+    color:#ffcc6c;
+}
+
+
+.lien {
+    position: absolute;
+    top: 50%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2  ;
+
+}
+.lien img:hover{
+    background-color: #ffcc6c;
+}
+.lien img {
+    width: 60px;
+    margin: 10px; /* Espacement entre les images */
+}
+
+.propos{
+    margin: 150px;
+}
+.propos h2{
+    font-size: 60px;
+    color: white;
+    text-align: start;
+}
+
+.propos p{
+    margin-top: 50px;
+    margin-left: 100px;
+    font-size: 40px;
+    color: white;
+}
+
+h2{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(4, 300px); /* Ajustez la taille des colonnes */
+    grid-template-rows: auto; /* Ajustez la taille des lignes */
+    gap: 100px; /* Espacement entre les éléments */
+    justify-content: center; /* Centrer la grille horizontalement */
+    align-items: center;
+    margin: 0 auto; /* Centrer la grille dans son conteneur */
+}
+
+.item {
+    text-align: center;
+}
+
+.item img {
+    width: 300px; /* Ajustez la taille des images */
+    height: 300px; /* Ajustez la taille des images */
+    background-color: #3D3E42;
+    border-radius: 15px;
+    padding: 15px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s, color 0.3s; /* Ajoute une transition pour l'effet de survol */
+}
+
+.item p {
+    color: white;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center; /* Centrer le titre */
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+
+
+.bouton:hover{
+    border:2px solid white;
+}
+.skills .item img:hover{
+    background-color:#ffcc6c ;
+}
+
+.portfolio h2{
+    font-size: 60px;
+    margin-top: 150px;
+    font-family: 'Montserrat',sans-serif;
+}
+.portfolio h3{
+    font-size: 50px;
+    color: white;
+    font-family: 'Montserrat',sans-serif;
+
+    margin-left: 100px;
+}
+.portfolio p{
+    font-size: 40px;
+    color: white;
+    margin-left: 300px;
+    margin-top: 70px;
+        font-family: 'Montserrat',sans-serif;
+
+}
+
+.contact-item {
+    margin: 10px 0;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column; /* Ajoute cette ligne pour aligner les éléments verticalement */
+    align-items: center; /* Ajoute cette ligne pour centrer les éléments horizontalement */
+    background-color: #3D3E42;
+    border-top: 1px solid #ffcc6c;
+    margin-top: 50px;
+    padding: 50px 0; /* Ajoute du padding pour espacer le contenu */
+}
+.contact h1 {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px; /* Ajoute de l'espacement en dessous du titre */
+}
+.contact-item a {
+    display: flex;
+    align-items: center; /* Change 'flex-start' en 'center' */
+    flex-direction: row;
+    border: 2px solid #3D3E42;
+    background-color:#31333b; 
+    border-radius: 15px;
+    padding: 10px 20px; /* Ajuste le padding pour mieux centrer le texte */
+    font-size: 30px; /* Réduit légèrement la taille de la police */
+    color: white;
+    gap: 20px; /* Réduit l'espacement entre les éléments */
+    transition: background-color 0.3s, color 0.3s; /* Ajoute une transition pour l'effet de survol */
+}
+
+
+.contact-item a img {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.contact-item a:hover {
+    background-color: #ffcc6c;
+    color: #1c1c1e;
+    transition: background-color 0.3s, color 0.3s; /* Ajoute une transition pour l'effet de survol */
+
+}
